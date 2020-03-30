@@ -2,7 +2,6 @@ jQuery(document).ready(function () {
 
 
   var tags = ["h1", "p", "img"];
-  var names = ["header", "paragraph", "image"];
 
 
   tags.forEach(function (tag) {
@@ -17,3 +16,4 @@ jQuery(document).ready(function () {
     });
   });
 });
+
