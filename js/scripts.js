@@ -1,35 +1,19 @@
-jQuery(document).ready(function() {
+jQuery(document).ready(function () {
 
 
-var tags = ["h1" , "p" , "img"]
-
-tags.forEach(function(tag){
-    tags[tag].addEventListener("click", function () {
-      alert("This is a " + tag);
-
-    })
-
-// jQuery("h1").click(function(){
-//   alert("this is" + tags[0] )
-// })
-
-});
+  var tags = ["h1", "p", "img"];
+  var names = ["header", "paragraph", "image"];
 
 
-  
-
-
-
-//   jQuery("h1").click(function() {
-//     alert("This is a header.");
-//     alert("I told you, THIS IS A HEADER!");
-// });
-
-//   jQuery("p").click(function() {
-//     alert("This is a paragraph.");
-// });
-
-//   jQuery("img").click(function() {
-//     alert("This is an image.");
-// });
+  tags.forEach(function (tag) {
+    $(tag).click(function () {
+      if (tag === "h1") {
+        alert("This is a header");
+      } else if (tag === "p") {
+        alert("This is a paragraph");
+      } else {
+        alert("This is an image");
+      }
+    });
+  });
 });
